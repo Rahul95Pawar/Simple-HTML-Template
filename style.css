@@ -1,0 +1,282 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+.main-body{
+    width: 80%;
+    margin: auto;
+}
+body{
+    background-color: rgb(242, 236, 236);
+}
+.header{
+    text-align: center;
+}
+.head{
+    font-size: 80px;
+}
+.sub-h{
+    font-size: 25px;
+    color: rgb(106, 102, 102);
+}
+.second-header{
+    display: flex;
+    justify-content:space-between;
+}
+.tel{
+    color: rgb(211, 203, 203);
+}
+button{
+    background-color:rgb(89, 83, 83) ;
+    color: white;
+}
+button:hover{
+    background-color: blue;
+}
+.nav ul{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.nav ul li{
+    list-style-type: none;
+    padding: 5px;
+}
+.nav ul li a{
+    text-decoration: none;
+}
+.nav ul li a i{
+    color: white;
+}
+.nav{
+    margin-top: 10px;
+    border:  double black;
+    border-width: 3px 0px;
+}
+.drop{
+    border: none;
+    background-color: transparent;
+}
+.nav span{
+    color: gray;
+}
+/* ---- container-A------ */
+.container-A{
+    background-color: white;
+    margin-top: 30px;
+    padding: 20px;
+}
+.container-A p{
+    color: rgb(124, 119, 119);
+}
+.container-A img{
+    width: 46px;
+    height: 46px;
+}
+.container-1{
+    display: flex;
+    justify-content: space-between;
+}
+.cont-p{
+    padding: 10px;
+    /* text-align: center; */
+    color: rgb(124, 119, 119);
+}
+.p1-1{
+    display: flex;
+}
+
+.container-2{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+.contEle{
+    width: 30%;
+}
+.cont-1 span{
+    color: red;
+}
+.cont-3 span{
+    color: red;
+}
+/* ------ container-B------ */
+.container-3{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+ .box-img{
+    box-shadow: 0px 8px 20px rgb(46, 44, 44);
+    height: 180px;
+    width: 260px;
+}
+.container-3 p{
+    width: 260px;
+    color: rgb(124, 119, 119);
+}
+.container-3 h3{
+    margin-top: 30px;
+    color: rgb(87, 84, 84);
+}
+.dummy{
+    margin-top: 40px;
+    border: 3px double rgb(106, 103, 103);
+}
+/* ------ container-C----- */
+.container-C{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+.cont-proj{
+    margin-top: 10px;
+    border-bottom: dotted;
+    color: rgb(124, 119, 119);
+}
+.boxes img{
+    margin-top: 20px;
+    border: 8px solid white;
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+.para-c1{
+    color: rgb(124, 119, 119);
+}
+.para-c1 h5{
+    padding: 10px;
+}
+/* ------ footers----- */
+.footer{
+    color: rgb(124, 119, 119);
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1030px){
+    .head h1{
+        font-size: 1.7em;
+    }
+    .contEle{
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 1030px) and (min-width: 885px){
+    .head h1{
+        font-size: 1.5em
+    }
+    .contEle{
+        margin-right: 10px;
+    }
+    .cont-p h3{ 
+        font-size: 16px;
+    }
+    .container-3{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media screen and (max-width: 885px) and (min-width: 760px){
+    
+    .head h1{
+        font-size: 1em
+    }
+    .contEle{
+        margin-right: 1em;
+    }
+    .cont-p h3{
+        font-size: 1em;
+    }
+    .container-3{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    /* .box-3{
+        margin-top: 10px;
+    } */
+    .boxes{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .container-C{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 760px) {
+    .nav{
+        display: flex;
+        justify-content: end;
+    }
+    .nav ul{
+        flex-direction: column;
+        width: 20%;
+    }
+    .nav ul li{
+        margin-top: 10px;
+    }
+    .nav ul li a{
+        font-size: 2.6vw;
+    }
+    .search input{
+        width: 20vw;
+    }
+
+    .head h1{
+        font-size: 12vw
+    }
+    .sub-h h5{
+        font-size: 0.5em;
+    }
+    .contEle{
+        margin: 10px 2px;
+        width: 80%;
+    }
+    .cont-p{
+        font-size: 0.9em;
+    }
+    .container-1{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .container-2{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .container-3{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .box-3{
+        margin-top: 10px;
+    }
+    .boxes{
+        flex-wrap: wrap;
+    }
+    .container-C{
+        flex-wrap: wrap;
+    }
+    .container-C .cont-c1{ width: 80%;
+        margin: auto; text-align: center;
+    }
+    .container-C .cont-c2{ width: 80%;
+    margin: auto; text-align: center;}
+    .container-C .cont-c3{ width: 80%;
+    margin: auto; text-align: center;}
+}
+
+
+@media screen and (max-width: 450px) {
+    .second-header{
+        flex-direction: column;
+        font-size: 14px;
+    }
+}
